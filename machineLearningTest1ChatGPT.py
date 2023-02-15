@@ -11,6 +11,7 @@ X = iris.data
 y = iris.target
 
 #Next, we split the dataset into training and testing sets using the train_test_split() function:
+# Maddie : removed random_state=42 from train_test_split to see what randomized returns looked like
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 #Now, let's create a K-Nearest Neighbors (KNN) model and fit it to the training data:
